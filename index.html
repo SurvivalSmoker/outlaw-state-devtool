@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Outlaw State Devtool</title>
+</head>
+<body>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <script>
+    window.TrelloPowerUp.initialize({
+      'card-buttons': function () {
+        return [{
+          text: 'Outlaw State Devtool',
+          callback: function (t) {
+            return t.popup({
+              title: 'Outlaw State Devtool',
+              url: './popup.html',
+              height: 300
+            });
+          }
+        }];
+      }
+    });
+  </script>
+</body>
+</html>
